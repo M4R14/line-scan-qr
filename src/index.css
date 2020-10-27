@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+.App {
+  display: grid;
+  grid-template-columns: minmax(300px, 500px);
+  justify-content: center;
+
+  min-height: 100vh;
+
+  background-color: whitesmoke;
+}
+
+.App > main {
+  padding: 2em;
+  background-color: white;
+}
+
+main > button {
+  width: 100%;
+}
+
+.QRtxt {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}

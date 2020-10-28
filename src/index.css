@@ -1,8 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap');
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Kanit', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -14,18 +14,17 @@ code {
 
 
 .App {
-  display: grid;
-  grid-template-columns: minmax(300px, 500px);
-  justify-content: center;
-
-  min-height: 100vh;
-
   background-color: whitesmoke;
 }
 
 .App > main {
-  padding: 2em;
-  background-color: white;
+  position: relative;
+  background-color: whitesmoke;
+
+  display: grid;
+  grid-template-columns: minmax(300px, 500px);
+  justify-content: center;
+  align-items: center;
 }
 
 main > button {
@@ -35,4 +34,46 @@ main > button {
 .QRtxt {
   padding-top: 1em;
   padding-bottom: 1em;
+}
+
+.control {
+  position: absolute;
+  top: 0;
+
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(300px, 500px);
+  justify-content: center;
+  align-items: center;
+}
+
+.control-main {
+  padding: 1.5em;
+  display: grid;
+  grid-column-gap: 0.5em;
+  grid-template-columns: repeat(2, calc(100vw/2 - 1.5em)); 
+  grid-template-areas: 
+    "image title"
+    "image title"
+    "button btton";
+
+  color: white;
+}
+
+.control-main > label:nth-child(1) {
+  align-self: auto;
+  justify-self: start;
+}
+
+.button-box {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+.button-box button {
+  width: 100%;
+  color: white;
+  background-color: rgb(184, 2, 154);
+  border-radius: 1rem;
 }

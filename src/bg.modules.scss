@@ -1,0 +1,37 @@
+.bg {
+    position: relative;
+    background-color: #ee31ad;
+    overflow: hidden;
+    min-height: 100vh;
+
+    > img {
+        position: absolute;
+    }
+}
+
+.bg-AB {
+    left: 20px;
+    top: -10px;
+    width: 170px;
+}
+
+.bg-A {
+    left: -35px;
+    bottom: -1px;
+    width: 150px
+}
+
+.bg-O{
+    right: 3%;
+    bottom: 0;
+    width: 150px;
+}
+
+
+.bg-B {
+    right: -50px;
+    width: 180px;
+    top: -20px;
+}
+  
+  

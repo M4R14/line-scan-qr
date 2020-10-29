@@ -2,6 +2,7 @@ import './App.css';
 import {useState} from 'react';
 
 import bgStyle from './bg.modules.scss';
+import BarcodeReader from './BarcodeReader';
 import BG_AB from './images/AB.png';
 import BG_A from './images/A.png';
 import BG_B from './images/B.png';
@@ -14,6 +15,7 @@ import liff from '@line/liff';
 liff.init({ 
   liffId: '1655180874-rpzb2gR5'
 });
+
 
 const sendAlertIfNotInClient = () => { console.log('sendAlertIfNotInClient') }
 const toggleQrCodeReader = () => { console.log('toggleQrCodeReader') }
@@ -104,6 +106,7 @@ function App() {
                 </Button>
               </div>
             )}
+            <BarcodeReader />
           </div>
         </div>
       </main>
